@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-mail Bot Test</title>
+</head>
+<body>
+
+    <div id="manualSender">
+        <div id="upperDiv">
+            <input type="text" id="toaddrs" placeholder="Email address">
+            <input type="text" id="messageSubject" placeholder="Subject">
+        </div>
+        <textarea type="textarea" id="messageContent" placeholder="TYPE HERE YOUR MESSAGE"></textarea>
+        <input type="submit" onclick="sendEmail()" value="SEND">
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
