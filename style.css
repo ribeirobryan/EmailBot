@@ -28,13 +28,22 @@ body{
     padding: 30px;
     border-radius: 5px;
 }
-#upperDiv{
+.inputDiv{
     width: 100%;
     display: flex;
     justify-content: space-between;
 
 }
-input[type="text"]{
+.inputWrapper{
+    width: 330px;
+}
+.inputWrapper label { 
+    margin-left: 10px;
+    color: rgb(100,100,100);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+input[type="text"], #subject{
     width: 330px;
     height: 30px;
     border: none;

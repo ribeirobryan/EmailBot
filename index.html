@@ -9,9 +9,29 @@
 <body>
 
     <div id="manualSender">
-        <div id="upperDiv">
-            <input type="text" id="toaddrs" placeholder="Email address">
-            <input type="text" id="messageSubject" placeholder="Subject">
+        <div class="inputDiv">
+            <div class="inputWrapper">
+                <label for="userEmailaddress">Enter your e-mail</label>
+                <input type="text" id="userEmailaddress">
+            </div>
+            <div class="inputWrapper">
+                <label for="userName">Enter your name</label>
+                <input type="text" id="userName">
+            </div>
+        </div>
+        <div class="inputDiv">
+            <div class="inputWrapper">
+                <label for="userEmailaddress">Enter your phone</label>
+                <input type="text" id="userPhoneNumber">
+            </div>
+            <div class="inputWrapper">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="none" selected></option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Question">Question</option>
+                </select>
+            </div>
         </div>
         <textarea type="textarea" id="messageContent" placeholder="TYPE HERE YOUR MESSAGE"></textarea>
         <input type="submit" onclick="sendEmail()" value="SEND">
